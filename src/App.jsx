@@ -17,12 +17,12 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout/>}>
-          <Route index element={ <> <h1>Home Page</h1> <Link to="/products">Products</Link> </>}/>
-          <Route path="/products" element={<Products />} />
-          <Route path="/products/:prodId" element={<h2>Product Page</h2>} />
-          <Route path="/add-product" element={<ProductForm />} />
-          <Route path="*" element={<DefaultElement />} />
+      <Route path="/" element={<Layout/>}>
+          <Route index element={ <h1>AXIOS CRUD TASK</h1> }/>
+          <Route path="/products" element={<Products/>} />
+          {/* <Route path="/products/:prodId" element={<h2>Product Page</h2>} /> */}
+          <Route path="/add-product" element={<ProductForm/>} />
+          <Route path="*" element={<DefaultElement/>} />
         </Route>
       </Routes>
     </BrowserRouter>
