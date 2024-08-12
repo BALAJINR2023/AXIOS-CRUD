@@ -1,0 +1,37 @@
+.header {
+    width: 100%;
+    position: fixed;
+    background-color: rgb(157, 157, 236);
+    top: 0px;
+    min-height: 40px;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(126, 56, 6);
+  }
+  .content {
+    margin-top: 40px;
+    min-height: calc(100vh - 40px);
+    margin-left: 125px;
+    background-color: inherit;
+  }
+.aside {
+    background-color: rgb(157, 157, 236);
+    color: rgb(126, 56, 6) !important;
+    height: 100vh;
+    position: fixed;
+    top: 40px;
+    width: 120px;
+    text-align: center;
+    
+  }
+.footer {
+    width: 100%;
+    background-color: rgb(157, 157, 236);
+    color: rgb(126, 56, 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+  }
