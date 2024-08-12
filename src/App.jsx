@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
-import Products from "./pages/Products";
-import ProductForm from "./pages/ProductForm";
-import Layout from "./pages/Layout";
+import Products from "./pages/Products.jsx";
+import ProductForm from "./pages/ProductForm.jsx";
+import Layout from "./pages/Layout.jsx";
 
 const DefaultElement = () => {
   return (
@@ -19,9 +19,9 @@ function App() {
       <Routes>
       <Route path="/" element={<Layout/>}>
           <Route index element={ <h1>AXIOS CRUD TASK</h1> }/>
-          <Route path="/products" element={<Products/>} />
+          <Route path="products" element={<Products/>} />
           {/* <Route path="/products/:prodId" element={<h2>Product Page</h2>} /> */}
-          <Route path="/add-product" element={<ProductForm/>} />
+          <Route path="add-product" element={<ProductForm/>} />
           <Route path="*" element={<DefaultElement/>} />
         </Route>
       </Routes>
